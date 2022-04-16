@@ -10,6 +10,7 @@
     "axios": "^0.25.0",
     "dateformat": "^5.0.2",
     "formik": "^2.2.9",
+    "pm2": "^5.2.0",
     "react": "^17.0.2",
     "react-datepicker": "^4.6.0",
     "react-dom": "^17.0.2",
@@ -26,7 +27,8 @@
     "build": "react-scripts --max_old_space_size=4096 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "serve:pm2": "pm2 serve build 3000 --spa"
   },
   "eslintConfig": {
     "extends": [
