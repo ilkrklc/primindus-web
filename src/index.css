@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Raleway:wght@100;700&family=Roboto:wght@100&family=Rubik:wght@300&display=swap');
+body {
+
+font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: rgb(#2d3340);
+}
+html{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+
+}

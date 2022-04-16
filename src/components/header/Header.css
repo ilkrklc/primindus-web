@@ -1,0 +1,125 @@
+.header-main{
+    width: 100%;
+    background-color: white;
+    color: #f8f8f8;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    margin : 20px 60px;  
+    
+
+}
+
+#simple-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#simple-nav li{
+    list-style: none;
+    margin: 0 20px;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.nav-main img{
+    width: 200px;
+}
+.hamburger-menu{
+    display: none;
+}
+#hamburger-nav{
+    display: none;
+}
+@media screen and (min-width:900px) {
+    #hamburger-nav-open{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    #simple-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        z-index: -1;
+        position: absolute;
+        top: -140px;
+    }
+    #hamburger-nav-open{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(44,50,63);
+        z-index: -1;
+        position: absolute; 
+        top: 23.5px;
+        left: 0;
+      
+    }
+  
+    #hamburger-nav-open li{
+        list-style: none;
+        margin: 0px 0px;
+        margin-right: 50px;
+        text-align: center;
+        background-color: rgb(44,50,63);
+        padding: 15px 10px;
+        
+    }
+    #hamburger-nav-open li:hover{
+        background-color: #1C1E26;
+    }
+    .hamburger-link{
+        text-decoration: none;
+        color: #f8f8f8;
+        
+        
+    }
+    .nav-main img{
+        width: 150px;
+    }
+
+    .link{
+        font-size: 15px;
+    }
+    .nav-main{
+        margin : 10px 10px;
+        padding: 5px 10px;
+    }
+    .hamburger-menu{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .simple-nav li{
+        margin: 0 5px;
+    }
+    .link {
+        font-size: 12px;
+        margin: 0 5px;
+    }
+    .nav-main{
+        margin : 10px 10px;
+    }
+ 
+    
+}
